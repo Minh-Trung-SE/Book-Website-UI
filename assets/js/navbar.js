@@ -42,4 +42,3 @@ let tabActiveIndex = 0
         tabs[tabActiveIndex].classList.add('active')
     }
 })()
-console.log(line)
