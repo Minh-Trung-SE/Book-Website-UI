@@ -16,10 +16,13 @@
 <body>
     <header class="header">
         <nav class="header-nav gird wide">
-            <a href="" class="header-nav__brand">
+            <div class="header-nav__control-btn pc-hide">
+                <i class="header-nav__control-icon fas fa-bars"></i>
+            </div>
+            <a href="" class="header-nav__brand mobile-hide">
                 <img src="./assets/img/icon.png" alt="" class="header-nav__brand-img">
             </a>
-            <ul class="header-nav-list mobile-hide">
+            <ul class="header-nav-list tablet-hide">
                 <li class="header-nav__item active">
                     <a href="" class="header-nav-item__link">
                         Home
@@ -51,7 +54,7 @@
                 <i class="nav-search__icon fas fa-search"></i>
                 <input class="nav-search__input" type="text" placeholder="Search for Books by Keyword ...">
             </div>
-            <div class="header-nav__user-control">
+            <div class="header-nav__user-control mobile-hide">
                 <button id="sign-up" class="header-nav__user-btn">Sign up</button>
             </div>
             <script src="./assets/js/navbar.js "></script>
