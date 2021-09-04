@@ -1,0 +1,126 @@
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+.header-nav {
+    display: flex;
+    height: 90px;
+    align-items: center;
+}
+
+.header-nav__brand {
+    display: block;
+    margin-right: 24px;
+}
+
+.header-nav__brand-img {
+    height: 30px;
+}
+
+.header-nav-list {
+    display: flex;
+    position: relative;
+}
+
+.header-nav__item {
+    display: block;
+    height: auto;
+    height: 100%;
+    list-style: none;
+    position: relative;
+    font-weight: 400;
+    margin: 0 12px;
+    color: #000;
+}
+
+.header-nav__item:hover {
+    color: #f75454;
+}
+
+.header-nav-item__link {
+    display: block;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-size: 16px;
+    color: inherit;
+}
+
+.header-nav-list>.line {
+    position: absolute;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #f75454;
+    transition: all 0.2s ease;
+}
+
+
+/*Search*/
+
+.nav-search {
+    margin-left: 32px;
+    flex-grow: 1;
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #F6F5F3;
+}
+
+.nav-search__icon {
+    margin-right: 8px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+}
+
+.nav-search__icon:hover {
+    color: #f75454;
+}
+
+.nav-search__input {
+    width: 100%;
+    padding: 4px;
+    border: none;
+    color: #7c6e65;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.nav-search input {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+
+/*Acount control*/
+
+.header-nav__user-control {
+    margin-left: 32px;
+}
+
+.header-nav__user-btn+.header-nav__user-btn {
+    margin-left: 16px;
+}
+
+.header-nav__user-btn {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(0, 0, 255, 0.603);
+    color: white;
+}
+
+.header-nav__user-btn:hover {
+    background-color: #f75454cc;
+}
+
+@media (max-width: 75em) {
+    .mobile-hide {
+        display: none;
+    }
+}
