@@ -170,10 +170,14 @@ html {
 }
 
 .top-carousel-container {
-    position: relative;
     overflow: hidden;
-    height: var(--carousel-height);
     background-image: url(../img/carousel_bg.jpg);
+}
+
+.top-carousel-list {
+    position: relative;
+    height: var(--carousel-height);
+    overflow: hidden;
 }
 
 .top-carousel-item {
@@ -212,7 +216,7 @@ html {
 }
 
 .top-carousel__text {
-    padding: 100px;
+    padding: 32px;
     display: flex;
     height: 600px;
     flex-direction: column;
