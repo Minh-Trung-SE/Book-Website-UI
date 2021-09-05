@@ -174,9 +174,14 @@ html {
     background-image: url(../img/carousel_bg.jpg);
 }
 
+.top-carousel-inner {
+    height: var(--carousel-height);
+    position: relative;
+}
+
 .top-carousel-list {
     position: relative;
-    height: var(--carousel-height);
+    height: 100%;
     overflow: hidden;
 }
 
