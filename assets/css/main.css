@@ -180,7 +180,7 @@ html {
 }
 
 .top-carousel-list {
-    position: relative;
+    /* position: relative; */
     height: 100%;
     overflow: hidden;
 }
@@ -189,9 +189,9 @@ html {
     width: 100%;
     height: 100%;
     list-style: none;
-    top: 0;
+    /* top: 0;
     left: -100%;
-    position: absolute;
+    position: absolute; */
     animation-duration: 0.8s;
     animation-name: slideout;
 }
