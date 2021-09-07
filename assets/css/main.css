@@ -176,22 +176,16 @@ html {
 
 .top-carousel-inner {
     height: var(--carousel-height);
-    position: relative;
 }
 
 .top-carousel-list {
-    /* position: relative; */
     height: 100%;
-    overflow: hidden;
 }
 
 .top-carousel-item {
     width: 100%;
     height: 100%;
     list-style: none;
-    /* top: 0;
-    left: -100%;
-    position: absolute; */
     animation-duration: 0.8s;
     animation-name: slideout;
 }
@@ -280,7 +274,6 @@ html {
 /*Dots control slide show*/
 
 .top-carousel-control {
-    position: absolute;
     bottom: 8px;
     z-index: 99;
     display: inline-flex;
@@ -318,4 +311,34 @@ html {
     background-color: #DCCCCC;
     border: 0 solid transparent;
     border-radius: 50%;
+}
+
+
+/*Category*/
+
+.category-container {
+    padding-top: 96px;
+    background-color: #FFF;
+    display: block;
+}
+
+.category-list {}
+
+.category-item {
+    list-style: none;
+    padding: 32px 40px;
+}
+
+.category-item__icon {
+    color: blue;
+    font-size: 45px;
+}
+
+.category-item__heading {
+    font-size: 16px;
+}
+
+.category-item__link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
 }

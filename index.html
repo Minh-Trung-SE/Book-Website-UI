@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./assets/font/fontawesome 5.13/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/rest.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -68,20 +66,6 @@
         <div class="top-carousel-container">
             <div class="gird wide top-carousel-inner">
                 <ul class="top-carousel-list">
-                    <li class="top-carousel-item top-carousel-item--active">
-                        <div class="top-carousel-item-inner row">
-                            <div class="top-carousel__text col-12 col-md-5">
-                                <h3 class="top-carousel__pretitle">Martin Robert C</h3>
-                                <h1 class="top-carousel__title">Clean Code</h1>
-                                <p class="top-carousel__description">" Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn’t
-                                    have to be that way."</p>
-                                <a class="top-carousel__btn" href="#">See More</a>
-                            </div>
-                            <div class="top-carousel__img col-12 col-md-7">
-                                <img src="./assets/img/carousel_1.jpg" alt="">
-                            </div>
-                        </div>
-                    </li>
                     <li class="top-carousel-item">
                         <div class="top-carousel-item-inner row">
                             <div class="top-carousel__text col-12 col-md-5">
@@ -119,7 +103,21 @@
                                     have to be that way."</p>
                                 <a class="top-carousel__btn" href="#">See More</a>
                             </div>
-                            <div class="top-carousel__img col-12 col-lg-6">
+                            <div class="top-carousel__img col-12 col-md-7">
+                                <img src="./assets/img/carousel_1.jpg" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-carousel-item">
+                        <div class="top-carousel-item-inner row">
+                            <div class="top-carousel__text col-12 col-md-5">
+                                <h3 class="top-carousel__pretitle">Martin Robert C</h3>
+                                <h1 class="top-carousel__title">Clean Code</h1>
+                                <p class="top-carousel__description">" Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn’t
+                                    have to be that way."</p>
+                                <a class="top-carousel__btn" href="#">See More</a>
+                            </div>
+                            <div class="top-carousel__img col-12 col-md-7">
                                 <img src="./assets/img/carousel_1.jpg" alt="">
                             </div>
                         </div>
@@ -149,18 +147,56 @@
                 </ul> -->
             </div>
             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js'></script>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
             <script>
                 $('.top-carousel-list').slick({
-                    dots: true,
-                    infinite: true,
-                    speed: 500,
-                    slidesToShow: 1,
-                    adaptiveHeight: true,
+                    prevArrow: false,
+                    nextArrow: false,
                     autoplay: true,
-                    autoplaySpeed: 2500,
+                    autoplaySpeed: 3000,
+                    speed: 1000
                 });
             </script>
+        </div>
+        <div class="category-container">
+            <ul class="category-list gird wide row">
+                <li class="category-item col-3">
+                    <div class="category-item-inner">
+                        <div class="category-item__icon">
+                            <i class="far fa-images"></i>
+                        </div>
+                        <h3 class="category-item__heading">Arts & Photography</h3>
+                        <a href="#" class="category-item__link">Shop Now</a>
+                    </div>
+                </li>
+                <li class="category-item col-3">
+                    <div class="category-item-inner">
+                        <div class="category-item__icon">
+                            <i class="far fa-images"></i>
+                        </div>
+                        <h3 class="category-item__heading">Arts & Photography</h3>
+                        <a href="#" class="category-item__link">Shop Now</a>
+                    </div>
+                </li>
+                <li class="category-item col-3">
+                    <div class="category-item-inner">
+                        <div class="category-item__icon">
+                            <i class="far fa-images"></i>
+                        </div>
+                        <h3 class="category-item__heading">Arts & Photography</h3>
+                        <a href="#" class="category-item__link">Shop Now</a>
+                    </div>
+                </li>
+                <li class="category-item col-3">
+                    <div class="category-item-inner">
+                        <div class="category-item__icon">
+                            <i class="far fa-images"></i>
+                        </div>
+                        <h3 class="category-item__heading">Arts & Photography</h3>
+                        <a href="#" class="category-item__link">Shop Now</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </main>
 </body>
