@@ -172,6 +172,8 @@ html {
 .top-carousel-container {
     overflow: hidden;
     background-image: url(../img/carousel_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .top-carousel-inner {
@@ -303,11 +305,11 @@ html {
 }
 
 .top-carousel-dot--active .top-carousel-dot__outer {
-    border: 2px solid black;
+    border: 2px solid #f75454;
 }
 
 .top-carousel-dot--active .top-carousel-dot__inner {
-    background-color: rgba(0, 0, 0, 0.849);
+    background-color: #f75454;
 }
 
 .top-carousel-dot__outer {
