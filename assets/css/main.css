@@ -159,103 +159,46 @@ html {
 
 /*Banner*/
 
-:root {
-    --carousel-height: 1200px
-}
-
-@media(min-width: 48em) {
-     :root {
-        --carousel-height: 600px
-    }
-}
-
-.top-carousel-container {
-    overflow: hidden;
+.top-slides-container {
     background-image: url(../img/carousel_bg.jpg);
-    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.top-carousel-inner {
-    height: var(--carousel-height);
-    position: relative;
-}
-
-.top-carousel-list {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-}
-
-.top-carousel-item {
+.top-slide-item {
     width: 100%;
     height: 100%;
     list-style: none;
-    top: 0;
-    left: -100%;
-    position: absolute;
     user-select: none;
 }
 
-.top-carousel-item--active {
-    left: 0;
-}
-
-.top-carousel-container .faceIn {
-    animation-duration: 1s;
-    animation-name: slidein;
-}
-
-.top-carousel-container .faceOut {
-    animation-duration: 1s;
-    animation-name: slideout;
-}
-
-@keyframes slidein {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideout {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.top-carousel__text {
+.top-slide__text {
     padding: 32px;
     display: flex;
-    height: 600px;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
 }
 
-.top-carousel__pretitle {
+.top-slide__pretitle {
     font-size: 18px;
     color: #BEB4B4;
     margin-bottom: 8px;
 }
 
-.top-carousel__title {
+.top-slide__title {
     font-size: 50px;
     margin-bottom: 8px;
 }
 
-.top-carousel__description {
+.top-slide__description {
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: 500;
     font-style: oblique;
 }
 
-.top-carousel__btn {
+.top-slide__btn {
     margin-top: 24px;
     padding: 8px;
     width: 120px;
@@ -268,21 +211,37 @@ html {
     color: #FFF;
 }
 
-.top-carousel__btn:hover {
+.top-slide__btn:hover {
     background-color: rgba(247, 84, 84, 0.8);
 }
 
-.top-carousel__img {
+.top-slide__img {
     height: 600px;
     display: inline-flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
+    position: relative;
+    z-index: 0;
 }
 
-.top-carousel__img img {
-    margin: auto;
+.top-slide__img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.top-slide__img img {
     width: auto;
-    height: 85%;
+    height: 95%;
+}
+
+.top-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
 }
 
 
