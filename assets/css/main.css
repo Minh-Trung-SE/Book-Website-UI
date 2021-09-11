@@ -336,14 +336,12 @@ html {
     padding: 30px 0;
 }
 
-.bestselling-list {
-    display: flex;
-    overflow: hidden;
+.bestselling__title {
+    margin: 16px 0;
 }
 
 .bestselling-item {
     list-style: none;
-    width: 100%;
     padding: 30px;
     border: 1px solid #eae8e4;
     transition: all 0.5s;
