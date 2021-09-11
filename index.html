@@ -130,10 +130,11 @@
             </div>
             <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
             <script>
-                const swiper = new Swiper('.swiper', {
+                const topSwiper = new Swiper('.top-slides-container .swiper', {
                     // Optional parameters
                     direction: 'horizontal',
                     loop: true,
+                    slideToClickedSlide: 'true',
 
                     autoplay: {
                         delay: 3000,
@@ -157,113 +158,165 @@
         <div class="bestselling-container">
             <div class="bestselling grid wide">
                 <h2 class="bestselling__title">Bestselling</h2>
-                <div class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide bestselling-item">
-                                <a class="book-item" href="/#">
-                                    <div class="book-item__img">
-                                        <img src="./assets/img/book-img-1.jpg" alt="">
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide bestselling-item">
+                            <a class="book-item" href="/#">
+                                <div class="book-item__img">
+                                    <img src="./assets/img/book-img-1.jpg" alt="">
+                                </div>
+                                <div class="book-item__body">
+                                    <div class="book-item__details">
+                                        <h3 class="book-item__title">You don’t know JS</h3>
+                                        <a class="book-item__author" href="#">Kyle Simpson</a>
+                                        <p class="book-item__price">$20</p>
                                     </div>
-                                    <div class="book-item__body">
-                                        <div class="book-item__details">
-                                            <h3 class="book-item__title">You don’t know JS</h3>
-                                            <a class="book-item__author" href="#">Kyle Simpson</a>
-                                            <p class="book-item__price">$20</p>
-                                        </div>
-                                        <div class="book-item__action">
-                                            <a class="book-item__btn" href="#">Add to cart</a>
-                                            <a class="book-item__like" href="#">
-                                                <i class="book-item__like-icon far fa-heart"></i>
-                                            </a>
-                                        </div>
+                                    <div class="book-item__action">
+                                        <a class="book-item__btn" href="#">Add to cart</a>
+                                        <a class="book-item__like" href="#">
+                                            <i class="book-item__like-icon far fa-heart"></i>
+                                        </a>
                                     </div>
-                                </a>
-                            </li>
-                            <li class="splide__slide bestselling-item">
-                                <a class="book-item" href="/#">
-                                    <div class="book-item__img">
-                                        <img src="./assets/img/book-img-1.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide bestselling-item">
+                            <a class="book-item" href="/#">
+                                <div class="book-item__img">
+                                    <img src="./assets/img/book-img-1.jpg" alt="">
+                                </div>
+                                <div class="book-item__body">
+                                    <div class="book-item__details">
+                                        <h3 class="book-item__title">You don’t know JS</h3>
+                                        <a class="book-item__author" href="#">Kyle Simpson</a>
+                                        <p class="book-item__price">$20</p>
                                     </div>
-                                    <div class="book-item__body">
-                                        <div class="book-item__details">
-                                            <h3 class="book-item__title">You don’t know JS</h3>
-                                            <a class="book-item__author" href="#">Kyle Simpson</a>
-                                            <p class="book-item__price">$20</p>
-                                        </div>
-                                        <div class="book-item__action">
-                                            <a class="book-item__btn" href="#">Add to cart</a>
-                                            <a class="book-item__like" href="#">
-                                                <i class="book-item__like-icon far fa-heart"></i>
-                                            </a>
-                                        </div>
+                                    <div class="book-item__action">
+                                        <a class="book-item__btn" href="#">Add to cart</a>
+                                        <a class="book-item__like" href="#">
+                                            <i class="book-item__like-icon far fa-heart"></i>
+                                        </a>
                                     </div>
-                                </a>
-                            </li>
-                            <li class="splide__slide bestselling-item">
-                                <a class="book-item" href="/#">
-                                    <div class="book-item__img">
-                                        <img src="./assets/img/book-img-1.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide bestselling-item">
+                            <a class="book-item" href="/#">
+                                <div class="book-item__img">
+                                    <img src="./assets/img/book-img-1.jpg" alt="">
+                                </div>
+                                <div class="book-item__body">
+                                    <div class="book-item__details">
+                                        <h3 class="book-item__title">You don’t know JS</h3>
+                                        <a class="book-item__author" href="#">Kyle Simpson</a>
+                                        <p class="book-item__price">$20</p>
                                     </div>
-                                    <div class="book-item__body">
-                                        <div class="book-item__details">
-                                            <h3 class="book-item__title">You don’t know JS</h3>
-                                            <a class="book-item__author" href="#">Kyle Simpson</a>
-                                            <p class="book-item__price">$20</p>
-                                        </div>
-                                        <div class="book-item__action">
-                                            <a class="book-item__btn" href="#">Add to cart</a>
-                                            <a class="book-item__like" href="#">
-                                                <i class="book-item__like-icon far fa-heart"></i>
-                                            </a>
-                                        </div>
+                                    <div class="book-item__action">
+                                        <a class="book-item__btn" href="#">Add to cart</a>
+                                        <a class="book-item__like" href="#">
+                                            <i class="book-item__like-icon far fa-heart"></i>
+                                        </a>
                                     </div>
-                                </a>
-                            </li>
-                            <li class="splide__slide bestselling-item">
-                                <a class="book-item" href="/#">
-                                    <div class="book-item__img">
-                                        <img src="./assets/img/book-img-1.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide bestselling-item">
+                            <a class="book-item" href="/#">
+                                <div class="book-item__img">
+                                    <img src="./assets/img/book-img-1.jpg" alt="">
+                                </div>
+                                <div class="book-item__body">
+                                    <div class="book-item__details">
+                                        <h3 class="book-item__title">You don’t know JS</h3>
+                                        <a class="book-item__author" href="#">Kyle Simpson</a>
+                                        <p class="book-item__price">$20</p>
                                     </div>
-                                    <div class="book-item__body">
-                                        <div class="book-item__details">
-                                            <h3 class="book-item__title">You don’t know JS</h3>
-                                            <a class="book-item__author" href="#">Kyle Simpson</a>
-                                            <p class="book-item__price">$20</p>
-                                        </div>
-                                        <div class="book-item__action">
-                                            <a class="book-item__btn" href="#">Add to cart</a>
-                                            <a class="book-item__like" href="#">
-                                                <i class="book-item__like-icon far fa-heart"></i>
-                                            </a>
-                                        </div>
+                                    <div class="book-item__action">
+                                        <a class="book-item__btn" href="#">Add to cart</a>
+                                        <a class="book-item__like" href="#">
+                                            <i class="book-item__like-icon far fa-heart"></i>
+                                        </a>
                                     </div>
-                                </a>
-                            </li>
-                            <li class="splide__slide bestselling-item">
-                                <a class="book-item" href="/#">
-                                    <div class="book-item__img">
-                                        <img src="./assets/img/book-img-1.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide bestselling-item">
+                            <a class="book-item" href="/#">
+                                <div class="book-item__img">
+                                    <img src="./assets/img/book-img-1.jpg" alt="">
+                                </div>
+                                <div class="book-item__body">
+                                    <div class="book-item__details">
+                                        <h3 class="book-item__title">You don’t know JS</h3>
+                                        <a class="book-item__author" href="#">Kyle Simpson</a>
+                                        <p class="book-item__price">$20</p>
                                     </div>
-                                    <div class="book-item__body">
-                                        <div class="book-item__details">
-                                            <h3 class="book-item__title">You don’t know JS</h3>
-                                            <a class="book-item__author" href="#">Kyle Simpson</a>
-                                            <p class="book-item__price">$20</p>
-                                        </div>
-                                        <div class="book-item__action">
-                                            <a class="book-item__btn" href="#">Add to cart</a>
-                                            <a class="book-item__like" href="#">
-                                                <i class="book-item__like-icon far fa-heart"></i>
-                                            </a>
-                                        </div>
+                                    <div class="book-item__action">
+                                        <a class="book-item__btn" href="#">Add to cart</a>
+                                        <a class="book-item__like" href="#">
+                                            <i class="book-item__like-icon far fa-heart"></i>
+                                        </a>
                                     </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide bestselling-item">
+                            <a class="book-item" href="/#">
+                                <div class="book-item__img">
+                                    <img src="./assets/img/book-img-1.jpg" alt="">
+                                </div>
+                                <div class="book-item__body">
+                                    <div class="book-item__details">
+                                        <h3 class="book-item__title">You don’t know JS</h3>
+                                        <a class="book-item__author" href="#">Kyle Simpson</a>
+                                        <p class="book-item__price">$20</p>
+                                    </div>
+                                    <div class="book-item__action">
+                                        <a class="book-item__btn" href="#">Add to cart</a>
+                                        <a class="book-item__like" href="#">
+                                            <i class="book-item__like-icon far fa-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="bestselling-swiper-pagination"></div>
                 </div>
             </div>
+            <script>
+                const swiper = new Swiper('.bestselling .swiper', {
+                    // Optional parameters
+                    direction: 'horizontal',
+                    loop: true,
+                    slidesPerView: 1,
+                    slideToClickedSlide: 'true',
+
+                    autoplay: {
+                        delay: 3000,
+                    },
+                    // If we need pagination
+                    pagination: {
+                        el: '.bestselling-swiper-pagination',
+                        clickable: 'true',
+                    },
+                    breakpoints: {
+                        // when window width is >= 640px
+                        1400: {
+                            slidesPerView: 6,
+                        },
+                        1200: {
+                            slidesPerView: 4,
+                        },
+                        960: {
+                            slidesPerView: 3,
+                        },
+                        720: {
+                            slidesPerView: 2,
+                        },
+                    },
+                });
+            </script>
         </div>
     </main>
 </body>

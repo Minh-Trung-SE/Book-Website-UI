@@ -245,50 +245,6 @@ html {
 }
 
 
-/*Dots control slide show*/
-
-.top-carousel-control {
-    position: absolute;
-    bottom: 8px;
-    z-index: 99;
-    display: inline-flex;
-    justify-content: center;
-    left: 0;
-    right: 0;
-}
-
-.top-carousel-dot {
-    list-style: none;
-    margin: 0.45rem;
-    cursor: pointer;
-}
-
-.top-carousel-dot--active .top-carousel-dot__outer {
-    border: 2px solid #f75454;
-}
-
-.top-carousel-dot--active .top-carousel-dot__inner {
-    background-color: #f75454;
-}
-
-.top-carousel-dot__outer {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.top-carousel-dot__inner {
-    width: .375rem;
-    height: .375rem;
-    background-color: #DCCCCC;
-    border: 0 solid transparent;
-    border-radius: 50%;
-}
-
-
 /*Best selling*/
 
 .bestselling-container {
@@ -426,4 +382,10 @@ html {
 
 .book-item__like-icon {
     color: black;
+}
+
+.bestselling-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
 }
