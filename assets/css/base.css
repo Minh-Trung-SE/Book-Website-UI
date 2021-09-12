@@ -1,0 +1,131 @@
+.no-list-style {
+    list-style: none;
+}
+
+.book-item-wrapper {
+    border: 1px solid #eae8e4;
+    padding: 30px;
+}
+
+.book-item {
+    text-decoration: none;
+    display: block;
+}
+
+.book-item-wrapper:hover {
+    border-radius: 2px;
+    box-shadow: 0 0 40px 0 rgb(22 22 25 / 10%);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.book-item__img {
+    height: auto;
+    position: relative;
+}
+
+.book-item__img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+}
+
+.book-item__img img {
+    width: auto;
+    height: 226px;
+    display: block;
+    margin: auto;
+}
+
+.book-item__details {
+    padding-top: 16px;
+}
+
+.book-item__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    color: #161619;
+    line-height: 1.2rem;
+    height: 2.4rem;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.book-item__body {
+    position: relative;
+}
+
+.book-item__details {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    will-change: top;
+    background-color: #FFF;
+    transition: top 0.5s;
+}
+
+.book-item__body:hover .book-item__details {
+    top: -40px;
+}
+
+.book-item__author {
+    padding-top: 8px;
+    text-decoration: none;
+    color: #f75454;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.book-item__price {
+    padding-top: 8px;
+    font-weight: 600;
+}
+
+.book-item__action {
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book-item__btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.book-item__btn:hover {
+    color: #f75454;
+}
+
+.book-item__like {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.book-item__like:hover {
+    background-color: red;
+}
+
+.book-item__like:hover .book-item__like-icon {
+    color: white;
+}
+
+.book-item__like-icon {
+    color: black;
+}
