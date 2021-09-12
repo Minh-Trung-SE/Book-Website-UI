@@ -44,6 +44,7 @@
 
 .book-item__title {
     overflow: hidden;
+    user-select: unset;
     text-overflow: ellipsis;
     display: -webkit-box;
     color: #161619;

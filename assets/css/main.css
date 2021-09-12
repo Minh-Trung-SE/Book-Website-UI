@@ -414,3 +414,146 @@ html {
 .featured__contents {
     padding: 48px 0 72px 0;
 }
+
+
+/*Deals section*/
+
+.deals-container {
+    background-color: #FFF6F6;
+}
+
+.deal-item {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    border: 1px solid #eae8e4;
+}
+
+.deal-item:hover {
+    border-radius: 2px;
+    box-shadow: 0 0 40px 0 rgb(22 22 25 / 10%);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.deal-item-left {
+    padding: 20px;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+
+.deal-item-left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.deal-item__img {
+    width: 200px;
+    height: 280px;
+}
+
+.deal-item-right {
+    padding: 20px;
+    flex: 1;
+}
+
+.deal-item__link {
+    text-decoration: none;
+}
+
+.deal-item__title {
+    color: #000;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    user-select: none;
+}
+
+.deal-item__author {
+    text-decoration: none;
+    color: #7c6e65;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.deal-item__price {
+    display: flex;
+    align-items: center;
+}
+
+.deal-item__progess-percent {
+    display: block;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #FCE5E5;
+}
+
+.deal-item__price {
+    padding-bottom: 8px;
+}
+
+.deal-item__price-deal {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.deal-item__price-old {
+    font-size: 14px;
+    color: #7c6e65;
+    text-decoration: line-through;
+}
+
+.deal-item__countdown-time {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.deal-item__countdown-unit {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.deal-item__countdown-unit span:last-child {
+    margin-left: 16px;
+    font-weight: 600;
+}
+
+.deal-item__countdown-title {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.deal-item__countdown-title span {
+    font-weight: 400;
+}
+
+.deal-item__progess {
+    padding-top: 32px;
+}
+
+.deal-item__progess-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.deal-item__progessbar {
+    height: inherit;
+    width: 80%;
+    border-radius: inherit;
+    background-color: #f75454;
+}
